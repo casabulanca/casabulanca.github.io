@@ -44,6 +44,7 @@ var Navigation = function() {
 	}
 
 	self.closeSlideMenu = function(data, event) {
+		debugger;
 		self.isSlideMenu(false);
 		return document.getElementsByTagName('body')[0].classList.remove('open-menu');
 	}

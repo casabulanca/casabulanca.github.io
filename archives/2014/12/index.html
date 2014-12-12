@@ -13,7 +13,7 @@
     <!-- Slide Menu -->
     <aside class="slideMenu-aside">
   		<div class="user-profile">
-			<img class="avatar" src="/css/images/21.jpg" alt="Ash" />
+			<img class="avatar" src="/css/images/29.jpg" alt="Ash" />
     		<div class="username">Casa Liu</div>
 			<!-- <div class="bio">
 			  	Senior UI Designer
@@ -35,14 +35,9 @@
 	    <!-- End of Header Picture -->
 	    <!-- Header Navigation-->
 	    <header>
-		    <a href="#" id="toggle" data-bind = "click : navigation.slideMenuControl, css: {'on' : navigation.isSlideMenu()},clickBubble: false">
+		    <a href="javascript:void(0)" id="toggle" data-bind = "click : navigation.slideMenuControl, css: {'on' : navigation.isSlideMenu()},clickBubble: false">
 		    	<span></span>
 		    </a>
-		  	<!-- <div id="toggle" data-bind = "click : navigation.slideMenuControl, css: {'on' : navigation.isSlideMenu()}"> -->
-			  <div class="one"></div>
-			  <div class="two"></div>
-			  <div class="three"></div>
-			</div>
 	      <div class="index-header-content">
 	        <h1 class="index-header-h1">
 	        	Casa Liu
@@ -64,12 +59,12 @@
 	    	
 		    <div>
     <span>2014-12-10</span>
-    <a href="/2014/12/10/my-first-post/">my first post111</a>
+    <a href="/2014/12/10/my-first-post/" data-bind = "click: function(){return true;},clickBubble: false">my first post111</a>
 </div>
 		    
 		    <div>
     <span>2014-12-10</span>
-    <a href="/2014/12/10/hello-world/">Hello World</a>
+    <a href="/2014/12/10/hello-world/" data-bind = "click: function(){return true;},clickBubble: false">Hello World</a>
 </div>
 		    
 	    </div>
