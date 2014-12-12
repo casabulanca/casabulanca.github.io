@@ -43,7 +43,7 @@ var Navigation = function() {
 		return document.getElementsByTagName('body')[0].classList.toggle(menuClass);
 	}
 
-	self.closeSlideMenu = function(data, event) {s
+	self.closeSlideMenu = function(data, event) {
 		self.isSlideMenu(false);
 		return document.getElementsByTagName('body')[0].classList.remove('open-menu');
 	}
