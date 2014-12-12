@@ -11,6 +11,8 @@
     <!-- End of Knockoutjs Template -->
 
     <!-- drop header -->
+    <section id="home" class="home">
+    </section>
   	<section id="home2" class="home2">
 		<div class="aboutme">
 			<h5>HELLO</h5>
@@ -44,6 +46,10 @@
     </section>
     <!-- End of drop header -->
 
+	    <a href="javascript:void(0)" id="toggle" data-bind = "click : navigation.slideMenuControl, css: {'on' : navigation.isSlideMenu()},clickBubble: false">
+	    	<span></span>
+	    </a>
+
     <!-- Slide Menu -->
     <aside class="slideMenu-aside">
   		<div class="user-profile">
@@ -61,6 +67,7 @@
 
 	<!-- Main area -->
     <main data-bind = "click: navigation.closeSlideMenu">
+
     	<!-- Header Picture -->
 	    <div class='blurImg'>
 	      <div style="background-image: url('https://d262ilb51hltx0.cloudfront.net/fit/c/1600/1280/gradv/29/81/60/darken/25/1*4ncz3hLxmL8E_bUh-0z62w.jpeg')"></div>
@@ -69,9 +76,6 @@
 	    <!-- End of Header Picture -->
 	    <!-- Header Navigation-->
 	    <header>
-		    <a href="javascript:void(0)" id="toggle" data-bind = "click : navigation.slideMenuControl, css: {'on' : navigation.isSlideMenu()},clickBubble: false">
-		    	<span></span>
-		    </a>
 	      <div class="index-header-content">
 	        <h1 class="index-header-h1">
 	        	Casa Liu
