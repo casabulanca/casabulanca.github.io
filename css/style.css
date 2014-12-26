@@ -1,6 +1,7 @@
 body {
     font-size: 14px;
-    font-family: Sans-Serif;
+    /*font-family: Sans-Serif;*/
+    
     margin: 0;
 }
 * {
@@ -433,6 +434,12 @@ h5 {
     font-size: 24px;
     margin-left: -1.2px;
     font-weight: 300;
+    font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    font-style: normal;
+}
+.block_list a {
+    color: rgba(0, 0, 0, 0.8);
 }
 .block_list .block_content_brief {
     display: block;
@@ -468,8 +475,6 @@ h5 {
     line-height: 1.3;
     display: inline-block;
     padding-bottom: 5px;
-}
-.block-postMeta .postMetaInline_tag {
     font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     letter-spacing: -0.02em;
     font-weight: 700;
@@ -478,12 +483,6 @@ h5 {
     text-transform: uppercase;
     font-size: 12px;
     margin-right: 10px;
-}
-.link_secondary {
-    color: rgba(0, 0, 0, 0.3);
-}
-.link {
-    color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
