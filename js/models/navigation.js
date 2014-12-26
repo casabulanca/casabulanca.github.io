@@ -13,7 +13,7 @@ var Navigation = function() {
 		text: "life",
 		isSelect: ko.observable(false)
 	}, {
-		text: "reading",
+		text: "work",
 		isSelect: ko.observable(false)
 	}, {
 		text: "tags",

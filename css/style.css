@@ -249,11 +249,12 @@ header {
 .container {
     height: 1300px;
     background: #fff;
+    width: 100%;
     z-index: 1;
     padding: 0px 20px;
 }
 .container div {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 40px;
 }
@@ -406,58 +407,45 @@ h5 {
 /*End of Footer*/
 /*Article Content*/
 
-.block_title {
-    color: rgba(0, 0, 0, 0.8);
-    display: block;
-    font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: bold;
-    height: 28px;
-    letter-spacing: -0.439999997615814px;
-    line-height: 28.6000003814697px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 160px;
-    margin-top: 0px;
-    visibility: visible;
-    width: 540px;
+.block_list {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1000px;
+    position: relative;
+    padding: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    line-height: 1.1;
 }
-.block_content {
-    color: rgba(0, 0, 0, 0.8);
+.block_list .block_image {
     display: block;
-    font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
-    height: 130px;
-    letter-spacing: -0.360000014305115px;
-    line-height: 19.7999992370605px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 4px;
-    visibility: visible;
-    width: 700px;
+    width: 140px;
+    height: 120px;
+    position: relative;
+    top: 70px;
+    float: left;
 }
-.block_content_brief {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0.8);
-    cursor: auto;
-    display: block;
-    font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    font-style: normal;
+.block_list .block_content {
+    margin-left: 165px;
+    margin-bottom: -5px;
+}
+.block_list .block_title {
+    line-height: 1.3;
+    font-size: 24px;
+    margin-left: -1.2px;
     font-weight: 300;
-    height: 50px;
-    letter-spacing: -0.360000014305115px;
-    line-height: 25.2000007629395px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 2px;
-    text-decoration: none;
-    visibility: visible;
-    width: 700px;
+}
+.block_list .block_content_brief {
+    display: block;
+    margin: 5px 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-left: -0.9px;
+    font-weight: 300;
+}
+.block_image {
+    background-color: #f0f0f0;
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
 }
 /*End of Article Content*/
