@@ -253,10 +253,11 @@ header {
     width: 100%;
     z-index: 1;
     padding: 0px 20px;
+    position: relative;
 }
 .container div {
     max-width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*padding-top: 40px;*/
 }
 /*Toggle button*/
@@ -320,69 +321,25 @@ header {
 #toggle.on {
     opacity: 1;
 }
+.main_content {
+    margin-right: 250px;
+}
+.main_rank {
+    width: 400px;
+    padding: 0 30px 60px;
+    background-color: #fafafa;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: -1px 0 1px -2px rgba(0, 0, 0, 0.9);
+}
 /*End of Toggle button*/
 /*End of Main*/
-/*drop header*/
-/*.home2 {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1.6s;
-    position: fixed;
-    background: none;
-    float: left;
-    z-index: 18;
-    width: 100%;
-    height: 500px;
-    top:-450px;
-}
-.home2:hover {
-    z-index: 20;
-    background-color: #fff;
-    top: 0px;
-}
-.aboutme {
-    float: left;
-    position: relative;
-    padding-left: 80px;
-    padding-top: 0px;
-    margin: 10px;
-    font-family: 'Droid sans';
-    width: 300px;
-    height: 400px;
-    opacity: 1;
-}
-h5 {
-    color: #000;
-    font-family: 'roboto';
-    letter-spacing: 6px;
-    font-size: 45px;
-}
-.trait {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-bottom: 4px solid #000;
-    width: 20px;
-}
-.croix {
-    position: absolute;
-    top: 90%;
-    right: 70px;
-    float: right;
-    color: #fff;
-    font-size: 55px;
-    font-family: 'roboto', sans-serif;
-}
-.home {
-    position: fixed;
-    background: none;
-    float: right;
-    z-index: 19;
-    width: 90%;
-    height: 100px;
-}*/
-/*End of drop header*/
 /*Footer*/
 
 .index-footer {
@@ -407,8 +364,7 @@ h5 {
 }
 /*End of Footer*/
 /*Article Content*/
-
-.block_list {
+/*.block_list {
     padding-left: 0;
     padding-right: 0;
     width: 1000px;
@@ -485,5 +441,95 @@ h5 {
     margin-right: 10px;
     text-decoration: none;
     cursor: pointer;
+}*/
+
+.blockgroup_list {
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.block_list {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
+    line-height: 1.1;
+}
+.block_list .block_content_brief {
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    margin: 5px 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin-left: -0.9px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+.block_list .block_title {
+    line-height: 1.3;
+    font-size: 24px;
+    margin-left: -1.2px;
+    font-weight: 300;
+    font-family: jaf-bernino-sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+.block_list .block_image {
+    display: block;
+    width: 140px;
+    height: 120px;
+    float: right;
+    margin: 2px 0 0 20px;
+}
+.block_image {
+    background-color: #f0f0f0;
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+}
+.block_list a {
+    color: rgba(0, 0, 0, 0.8);
+}
+.block_list .block_content {
+    /*margin-left: 165px;*/
+    margin-bottom: -5px;
+}
+.block_postMeta {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    line-height: 1.6;
+}
+.block_postMeta .postMetaInline {
+    vertical-align: baseline;
+    color: rgba(0, 0, 0, 0.6);
+    text-rendering: auto;
+    line-height: 1.3;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-family: "jaf-bernino-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.block_content_other:before, .block_content_other:after {
+    display: table;
+    content: " ";
+}
+.block_content_other:after {
+    clear: both;
 }
 /*End of Article Content*/
