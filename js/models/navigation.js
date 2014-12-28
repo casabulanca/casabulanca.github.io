@@ -4,19 +4,16 @@ var Navigation = function() {
 	self.isSlideMenu = ko.observable(false);
 
 	self.navigatItem = ko.observableArray([{
-		text: "reading list",
+		text: "home",
 		isSelect: ko.observable(true)
 	}, {
 		text: "lastest",
 		isSelect: ko.observable(false)
 	}, {
-		text: "life",
-		isSelect: ko.observable(false)
-	}, {
-		text: "work",
-		isSelect: ko.observable(false)
-	}, {
 		text: "tags",
+		isSelect: ko.observable(false)
+	}, {
+		text: "contact",
 		isSelect: ko.observable(false)
 	}])
 
@@ -27,7 +24,9 @@ var Navigation = function() {
 			} else {
 				value.isSelect(false);
 			}
-		})
+		});
+
+		return true;
 	};
 
 	self.slideMenuControl = function(data, event) {
@@ -46,5 +45,17 @@ var Navigation = function() {
 	self.closeSlideMenu = function(data, event) {
 		self.isSlideMenu(false);
 		return document.getElementsByTagName('body')[0].classList.remove('open-menu');
+	}
+
+	self.highlightNavigate = function(data, event){
+		self.navigatItem().forEach(function(value, index) {
+			if (value.text === "tags") {
+				value.isSelect(true);
+			} else {
+				value.isSelect(false);
+			}
+		});
+
+		return true;
 	}
 }
